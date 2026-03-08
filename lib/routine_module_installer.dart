@@ -18,8 +18,11 @@ class RoutineModuleInstaller implements ModuleInstaller {
   @override
   ModuleMetadata get metadata => const ModuleMetadata(
     id: 'mindperch-routine',
+    displayNameKey: 'routineTitle',
+    descriptionKey: 'routineDescription',
     displayName: 'Routines',
     description: 'Step-by-step ADHD routines',
+    iconData: Icons.repeat,
     linuxDependencies: [
       SystemDependency(
         name: 'GStreamer Audio',
